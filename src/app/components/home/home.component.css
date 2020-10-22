@@ -1,0 +1,133 @@
+.black-wrapper{
+    position: absolute;
+    z-index: 1;
+    background-color: #111;
+    height: 100%;
+    width: 30%;
+}
+
+.img-1{
+    background-image: url('../../../assets/img1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-2{
+    background-image: url('../../../assets/img2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 60%;
+    color: #fff;
+    z-index: 2;
+}
+
+.slide-content span {
+    font-size: 18px;
+}
+
+.slide-content h1{
+    font-size: 90px;
+    letter-spacing: -4px;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.slide-content .buttons button{
+    color: #fff;
+    font-weight: bold;
+    background-color: #da072c;
+    padding: 8px 40px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    transition: background-color .5s ease;
+    box-sizing: border-box;
+    margin-right: 30px 
+}
+
+.slide-content .buttons button:nth-child(2){
+    background-color: transparent;
+    border: 2px solid #fafafa;
+}
+
+
+.about-us{
+    height: 100vh;
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-us .image-container{
+    width: 50%;
+    position: relative;
+}
+
+.about-us .image-container .noabsolute{
+    width: 90%;
+    vertical-align: top;
+}
+
+.about-us .image-container .absolute{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    width: 250px;
+    border: 12px solid #fff;
+}
+
+.about-us .description-container{
+    width: 50%;
+    padding-left: 40px;
+}
+
+
+.about-us .description-container span{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.about-us .description-container h2{
+    font-size: 50px;
+}
+
+.about-us .description-container p{
+    font-size: 18px;
+    margin: 25px 0px 15px 0;
+}
+
+.mini-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mini-card{
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.mini-card span{
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+}

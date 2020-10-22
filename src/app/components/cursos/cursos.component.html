@@ -1,0 +1,32 @@
+<div class="cursos-container">
+
+    <div class="cursos-list">
+
+        <h2>Cursos</h2>
+
+        <div 
+            *ngFor="let curso of cursos" 
+            class="curso-item"
+            (click)="selectCurso(curso)"
+            [ngClass]="{'selected': curso.nombre_curso == cursoSelected}"
+            >
+        
+            <h2>{{curso.nombre_curso}}</h2>
+            <span>{{curso.area_curso}}</span>
+        </div>
+
+    </div>
+
+    <div class="alumnos-list">
+        <h2>Alumnos en Curso {{cursoSelected}}</h2>
+
+        <ul>
+            <li
+                *ngFor="let estu of estudiantes"
+            >
+            {{estu.nombre_alumno + " " + estu.apellido_alumno}}
+            </li>
+        </ul>
+    </div>
+
+</div>
